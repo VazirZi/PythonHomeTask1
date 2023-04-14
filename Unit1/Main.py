@@ -21,3 +21,27 @@ Petya = part / 2
 Sereja = Petya
 
 print(f"Катя сделала {int(Katya)} журавликов, Петя сделал {int(Petya)} журавликов, Сережа сделал {int(Sereja)} журавликов.")
+
+# Unit 3
+
+numberOfTicket = int(input('Введите номер билета (шестизначное число): '))
+count = 0
+firstPartOfTicket = 0
+secondPartOfTicket = 0
+
+while (count < 6):
+    if count < 3:
+        secondPartOfTicket += int(numberOfTicket) % 10
+        numberOfTicket /= 10
+        count += 1
+    elif count >= 3:
+        firstPartOfTicket += int(numberOfTicket) % 10
+        numberOfTicket /= 10
+        count += 1
+
+if firstPartOfTicket == secondPartOfTicket:
+    print('yes')
+else:
+    print('no')
+
+    
