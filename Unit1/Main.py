@@ -44,4 +44,16 @@ if firstPartOfTicket == secondPartOfTicket:
 else:
     print('no')
 
-    
+# Unit 4
+
+width = int(input('Введите ширину шоколадки (в дольках): '))
+height = int(input('Введите длину шоколадки (в дольках): '))
+
+countOfParts = int(input('Введите количество долек для отлома: '))
+
+if width == countOfParts or height == countOfParts:
+    print('yes')
+elif countOfParts % width == 0 or countOfParts % height == 0:
+    print('yes')
+else:
+    print('no')
